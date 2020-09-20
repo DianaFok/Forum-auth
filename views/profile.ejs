@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Fire Breathing Rubber Duckies</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/077191d827.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1>Messages</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/general"> <button>To Main Forum</button> </a>
+        <a href="/personal"> <button>To Personal Messages</button> </a>
+    </div>
+
+    <h2>Add a message</h2>
+  <% if (user.local.email) { %>
+    <form action="/messages" method="POST">
+      <input type="text" value="<%= user.local.email %>" name="name">
+      <textarea type="text" placeholder="message" name="msg"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <% } %>
+    <div class="row">
+        </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

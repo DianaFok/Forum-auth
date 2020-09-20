@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  list-style-position: inside;
+  background-image: url(img/profile.jpg);
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  height: 5rem;
+  font-size: 2rem;
+}
+
+textarea {
+  height: 20rem;
+  font-size: 2rem;
+}

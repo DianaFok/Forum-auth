@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <title>Fire Breathing Rubber Duckies</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1> Main Forum</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/profile"> <button id="toProfile">To Messages</button> </a>
+        <a href="/personal"> <button>To Personal Messages</button> </a>
+
+
+    </div>
+
+    <div class="row">
+
+        </div>
+        <div class="col-sm-6">
+          <h3>All Messages</h3>
+          <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span id="name"><%= messages[i].name %></span>
+              <span><%= messages[i].msg %></span>
+              <span><%= messages[i].thumbUp %></span>
+              <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          </ul>
+
+        <% if (user.local.email) { %>
+
+        </div>
+        <% } %>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

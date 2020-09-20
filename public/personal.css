@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background-image: url(img/msg.png);
+  background-repeat: no-repeat;
+  background-color: rgb(63,63,63);
+  color: white;
+}
+
+li {
+  margin-left: 25rem;
+  width: 50rem;
+  list-style-type: none;
+  border: 1px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: rgb(255,255,255,0.3);
+}
+
+#name {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  text-align: left;
+}
+
+#msg {
+  font-size: 2rem;
+}
